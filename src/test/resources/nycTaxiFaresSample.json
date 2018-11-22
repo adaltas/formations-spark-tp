@@ -1,0 +1,10 @@
+{"driverId":2013000001,"paymentType":"CSH","rideId":1,"startTime":"2013-01-01T00:00:00.000+01:00","taxiId":2013000001,"tip":0.0,"tolls":0.0,"totalFare":21.5}
+{"driverId":2013000002,"paymentType":"CSH","rideId":2,"startTime":"2013-01-01T00:00:00.000+01:00","taxiId":2013000002,"tip":0.0,"tolls":0.0,"totalFare":7.0}
+{"driverId":2013000003,"paymentType":"CRD","rideId":3,"startTime":"2013-01-01T00:00:00.000+01:00","taxiId":2013000003,"tip":2.2,"tolls":0.0,"totalFare":13.7}
+{"driverId":2013000004,"paymentType":"CRD","rideId":4,"startTime":"2013-01-01T00:00:00.000+01:00","taxiId":2013000004,"tip":1.7,"tolls":0.0,"totalFare":10.7}
+{"driverId":2013000005,"paymentType":"CRD","rideId":5,"startTime":"2013-01-01T00:00:00.000+01:00","taxiId":2013000005,"tip":4.65,"tolls":0.0,"totalFare":20.15}
+{"driverId":2013000006,"paymentType":"CSH","rideId":6,"startTime":"2013-01-01T00:00:00.000+01:00","taxiId":2013000006,"tip":0.0,"tolls":4.8,"totalFare":34.3}
+{"driverId":2013000007,"paymentType":"CRD","rideId":7,"startTime":"2013-01-01T00:00:00.000+01:00","taxiId":2013000007,"tip":1.9,"tolls":0.0,"totalFare":11.9}
+{"driverId":2013000008,"paymentType":"CSH","rideId":8,"startTime":"2013-01-01T00:00:00.000+01:00","taxiId":2013000008,"tip":0.0,"tolls":0.0,"totalFare":6.0}
+{"driverId":2013000009,"paymentType":"CRD","rideId":9,"startTime":"2013-01-01T00:00:00.000+01:00","taxiId":2013000009,"tip":1.0,"tolls":0.0,"totalFare":6.0}
+{"driverId":2013000010,"paymentType":"CSH","rideId":10,"startTime":"2013-01-01T00:00:00.000+01:00","taxiId":2013000010,"tip":0.0,"tolls":0.0,"totalFare":15.5}

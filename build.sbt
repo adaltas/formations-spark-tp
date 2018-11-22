@@ -33,4 +33,3 @@ val testDependencies: Seq[ModuleID] = Seq(
 libraryDependencies ++= commonDependencies ++
   sparkDependencies ++
   testDependencies
-
