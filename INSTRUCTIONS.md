@@ -12,6 +12,8 @@ Throughout the different steps you will learn how:
 
 ## Prerequisites
 
+You will need Java 8, versions 9 to 11 are not supported
+
 You can do everything through [IntelliJ IDEA](https://jetbrains.com/idea) or you will need the following installed
 on your machine: 
 
@@ -28,13 +30,16 @@ The code base is composed of multiple parts:
  
 To package the project:
 
-- from cmd `sbt assembly`
-- from IntelliJ, setup an assembly task (see [here](https://stackoverflow.com/questions/25109981/how-to-run-sbt-assembly-tasks-from-within-intellij-idea))
+- from cmd line with SBT installed `sbt assembly`
+- from IntelliJ
+  * execute `assembly` in the sbt shell tab on the bottom of the interface
+  * setup an assembly task (see [here](https://stackoverflow.com/questions/25109981/how-to-run-sbt-assembly-tasks-from-within-intellij-idea))
  
 To run the unit tests:
 
-- from cmd `sbt test`
+- from cmd line with SBT installed `sbt test`
 - from IntelliJ
+  * execute `test` in the sbt shell tab on the bottom of the interface
   * setup a test task (see [here](https://stackoverflow.com/questions/25109981/how-to-run-sbt-assembly-tasks-from-within-intellij-idea))
   * right click on the test file to run and select `Run 'MyTestClass'`
 
@@ -89,16 +94,16 @@ name as the column parsed to overwrite it. Check the functions' comments and usa
 Once you have your functions implemented:
 
 - Package your job (see source code section above) and get your jar in `target/scala-2.11/spark-tp-batch-assembly-0.1.jar`
-- Upload your jar on the cluster 
-- Run your job with the following command: 
+- Upload your jar on the cluster, using FileZilla for example (use you SSH user and password, see [here](https://www.rc.fas.harvard.edu/resources/documentation/sftp-file-transfer/))
+- Connect to the cluster with SSH and run your job with the following command (replace the database and table-name): 
 
 ```bash
 spark-submit \
-  --master yarn 
+  --master yarn  \
   --class com.adaltas.ece.spark.Main \
   spark-tp-batch-assembly-0.1.jar \
-  --rides hdfs://[path/to/rides.gz] \
-  --fares hdfs://[path/to/fares.gz] \
+  --rides hdfs:///res/nycTaxi/Rides/nycTaxiRides.gz \
+  --fares hdfs:///res/nycTaxi/Fares/nycTaxiFares.gz \
   --database [database] \
   --table [table-name] 
 ```
